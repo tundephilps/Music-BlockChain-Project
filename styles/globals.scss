@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+  background-color: #b3b2b1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 0.5rem;
+  background-color: #eeb844;
+  border-radius: 10px;
+}
+
+.dflex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_wrapper {
+  @extend .dflex;
+  width: 100%;
+  height: calc(80vh - 40px);
+}
+header {
+  @extend .dflex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0 50px;
+  background: #000;
+}
+.menu_container {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  @extend .dflex;
+  flex-direction: column;
+  z-index: 99;
+
+  position: absolute;
+  a {
+    display: inline-flex;
+    color: #fff;
+    text-decoration: none;
+    height: 80px;
+    overflow: hidden;
+    font-size: 2vw;
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
+    text-transform: uppercase;
+    + a {
+      margin-top: 1vw;
+    }
+  }
+
+  .btn_close {
+    @extend .dflex;
+    width: 58px;
+    height: 58px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 58px;
+    position: absolute;
+    bottom: 104%;
+    right: 20px;
+    z-index: 2;
+    cursor: pointer;
+    font-size: 18px;
+  }
+}
