@@ -1,7 +1,40 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const NavbarBig = () => {
+  const router = useRouter();
+
+  // Check if the current route is the About page
+  const isMarketPlace = router.pathname === "/MarketPlace";
+
+  const isMusic = router.pathname === "/Music";
+
+  const isNFT = router.pathname === "/NFT";
+
+  const isMerchs = router.pathname === "/Merchs";
+
+  const isLogin = router.pathname === "/Login";
+
+  // If it's the About page, don't render the Navbar
+
+  if (isMarketPlace) {
+    return null;
+  }
+
+  if (isMusic) {
+    return null;
+  }
+  if (isNFT) {
+    return null;
+  }
+  if (isLogin) {
+    return null;
+  }
+  if (isMerchs) {
+    return null;
+  }
+
   return (
     <section className="left-0 w-full overflow-x-hidden absolute top-0 hidden lg:flex  bg-black  ">
       <div className="  min-w-[100vw]   z-50 bg-black ">
@@ -44,6 +77,12 @@ const NavbarBig = () => {
                   className="font-inter rounded-lg pb-8 hover:text-[#FF9500] lg:px-6 lg:py-4 lg:pb-0"
                 >
                   Contact Us
+                </Link>
+                <Link
+                  href="/MarketPlace"
+                  className="font-inter rounded-lg pb-8 hover:text-[#FF9500] lg:px-6 lg:py-4 lg:pb-0"
+                >
+                  Market Place
                 </Link>
               </div>
               <div className="flex flex-col space-y-8 lg:flex lg:flex-row lg:space-x-3 lg:space-y-0">

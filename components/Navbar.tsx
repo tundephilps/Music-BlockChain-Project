@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiMenu } from "react-icons/fi";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -13,6 +14,38 @@ function Navbar() {
   const closeMenu = () => {
     setOpen(false);
   };
+
+  const router = useRouter();
+
+  // Check if the current route is the About page
+  const isMarketPlace = router.pathname === "/MarketPlace";
+
+  const isMusic = router.pathname === "/Music";
+
+  const isNFT = router.pathname === "/NFT";
+
+  const isMerchs = router.pathname === "/Merchs";
+
+  const isLogin = router.pathname === "/Login";
+
+  // If it's the About page, don't render the Navbar
+
+  if (isMarketPlace) {
+    return null;
+  }
+
+  if (isMusic) {
+    return null;
+  }
+  if (isNFT) {
+    return null;
+  }
+  if (isLogin) {
+    return null;
+  }
+  if (isMerchs) {
+    return null;
+  }
 
   //lets start animation
   const item = {
@@ -127,6 +160,22 @@ function Navbar() {
               }}
             >
               Contact Us
+            </motion.a>
+            <motion.a
+              href="/MarketPlace"
+              initial={{ y: 80, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.4 }}
+              exit={{
+                opacity: 0,
+                y: 90,
+                transition: {
+                  ease: "easeInOut",
+                  delay: 0.2,
+                },
+              }}
+            >
+              MarketPlace
             </motion.a>
             <div>
               <Link
