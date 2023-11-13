@@ -107,7 +107,7 @@ const CardMusic2 = () => {
         </div>
         <Image
           src={artiste1}
-          width={400}
+          width={1000}
           height={700}
           className="h-64 rounded-md cursor-pointer "
           alt=""
@@ -121,9 +121,10 @@ const CardMusic2 = () => {
         </div>
         <div className="flex flex-col items-end ">
           <h3 className="text-xs text-gray-400">(803.39)</h3>
-          <h1 className="flex flex-row gap-1 items-center ">
-            <FaEthereum /> 0.23 ETH
-          </h1>
+          <div className="flex flex-row gap-1 items-center w-[100%]">
+            <FaEthereum />
+            <h3> 0.23 ETH</h3>
+          </div>
         </div>
       </div>
     </div>

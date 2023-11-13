@@ -1,16 +1,12 @@
 import React from "react";
 import Sidebar from "../components/Sidebar/index";
 
-import { AppProps } from "next/app";
-import NFT from "./NFT";
-import Music from "./Music";
-
 export default function MarketPlace() {
   return (
-    <main className="">
+    <div className="">
       <Sidebar />
-      <div className="py-8 px-20 bg-black h-[100vh] flex items-center justify-center ">
-        <h1 className="text-white">
+      <div className="lg:py-8 lg:px-20 bg-black h-[100vh] flex items-center justify-center ">
+        <h1 className="">
           <h1 className="jt --debug">
             <span className="jt__row">
               <span className="jt__text">BEMAVERSE</span>
@@ -27,6 +23,6 @@ export default function MarketPlace() {
           </h1>
         </h1>
       </div>
-    </main>
+    </div>
   );
 }

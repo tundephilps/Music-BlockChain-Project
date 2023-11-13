@@ -49,7 +49,7 @@ const MusicContainer = () => {
   return (
     <main className="">
       <Sidebar />
-      <div className="py-8 px-20 bg-black h-[100vh]">
+      <div className="lg:py-8 lg:px-20 bg-black h-[100vh]">
         <Swipe />
       </div>
     </main>

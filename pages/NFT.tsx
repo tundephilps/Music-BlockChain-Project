@@ -36,7 +36,7 @@ const NFTContainer = () => {
   return (
     <main className="">
       <Sidebar />
-      <div className="px-20 bg-black py-12  ">
+      <div className="lg:px-20 bg-black lg:py-12  ">
         <h1 className="text-white">NFT</h1>
         <Card />
       </div>

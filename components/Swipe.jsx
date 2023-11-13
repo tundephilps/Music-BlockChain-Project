@@ -34,11 +34,11 @@ export default function Swipe() {
             prevEl: ".swiper-button-prev",
             nextEl: ".swiper-button-next",
           }}
-          slidesPerView={2}
+          slidesPerView={1}
           spaceBetween={10}
           breakpoints={{
             640: {
-              slidesPerView: 2,
+              slidesPerView: 1,
               spaceBetween: 20,
             },
             768: {

@@ -38,8 +38,8 @@ const MerchContainer = () => {
   return (
     <main className="">
       <Sidebar />
-      <div className="py-12 px-20 bg-black   ">
-        <Billboard />
+      <div className="lg:py-12 lg:px-20 bg-black   ">
+        {/* <Billboard /> */}
         <CardMerch />
       </div>
     </main>
