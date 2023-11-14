@@ -18,6 +18,7 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 export default function Swipe() {
   return (
     <>
+      <h1 className="text-white text-3xl">Freshly Minted</h1>
       <div className="relative">
         <div className="absolute inset-y-0 left-0 z-10 flex items-center">
           <button className=" swiper-button-prev   bg-white -ml-2 lg:-ml-4 flex justify-center items-center w-10 h-10 rounded-full shadow focus:outline-none">

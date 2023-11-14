@@ -1,6 +1,7 @@
 import Card from "@/components/Card";
 import CardMusic2 from "@/components/CardMusic2";
 import Loader from "@/components/Loader";
+import PlayList from "@/components/PlayList";
 import Sidebar from "@/components/Sidebar";
 import Swipe from "@/components/Swipe";
 import React, { useEffect, useState } from "react";
@@ -49,8 +50,11 @@ const MusicContainer = () => {
   return (
     <main className="">
       <Sidebar />
-      <div className="lg:py-8 lg:px-20 bg-black h-[100vh]">
+      <div className="lg:py-8 lg:px-20 bg-black h-full">
         <Swipe />
+        <div className="">
+          <PlayList />
+        </div>
       </div>
     </main>
   );

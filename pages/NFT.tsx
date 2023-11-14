@@ -1,5 +1,7 @@
 import Card from "@/components/Card";
 import Loader from "@/components/Loader";
+import NFTBanner from "@/components/NFTBanner";
+import Search from "@/components/Search";
 import Sidebar from "@/components/Sidebar";
 import React, { useEffect, useState } from "react";
 
@@ -36,9 +38,15 @@ const NFTContainer = () => {
   return (
     <main className="">
       <Sidebar />
-      <div className="lg:px-20 bg-black lg:py-12  ">
-        <h1 className="text-white">NFT</h1>
-        <Card />
+      <div className=" bg-black lg:py-12 py-8 px-4 lg:flex lg:items-end lg:justify-center overflow-hidden ">
+        <div className="lg:px-28 ">
+          <Search />
+          <NFTBanner />
+
+          <h1 className="text-white text-3xl">NFT</h1>
+
+          <Card />
+        </div>
       </div>
     </main>
   );

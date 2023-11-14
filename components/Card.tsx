@@ -4,8 +4,8 @@ import React from "react";
 
 const Card: React.FC = () => {
   return (
-    <div className="flex items-center justify-center">
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center justify-center ">
+    <div className=" flex items-center justify-center ">
+      <div className="lg:w-[1300px] grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 items-center justify-center ">
         <div className="parent">
           <div className="card">
             <div className="content-box">
