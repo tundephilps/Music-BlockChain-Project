@@ -89,7 +89,10 @@ const CardMusic3 = () => {
     <div>
       <div className="grid lg:grid-cols-6 gap-4 md:grid-cols-3 sm:grid-cols-2">
         {data.map((item) => (
-          <div className=" h-full  py-6 bg-[#09090c] rounded-md box-shadow-lg cursor-pointer  hover:shadow-yellow-700  transition-all duration-200 ease-in hover:scale-100 hover:-translate-y-10">
+          <div
+            key={item.id}
+            className=" h-full  py-6 bg-[#09090c] rounded-md box-shadow-lg cursor-pointer  hover:shadow-yellow-700  transition-all duration-200 ease-in hover:scale-100 hover:-translate-y-10"
+          >
             <div className="relative w-full  ">
               <Image
                 src={item.image}
