@@ -1,4 +1,6 @@
+import Ads from "@/components/Ads";
 import Card from "@/components/Card";
+import CardCollectors from "@/components/CardCollectors";
 import CardMusic2 from "@/components/CardMusic2";
 import Loader from "@/components/Loader";
 import PlayList from "@/components/PlayList";
@@ -52,8 +54,19 @@ const MusicContainer = () => {
       <Sidebar />
       <div className="lg:py-8 lg:px-20 bg-black h-full">
         <Swipe />
-        <div className="">
+        <div className="pt-12">
           <PlayList />
+        </div>
+        <div>
+          <h1 className="text-white text-3xl pt-12">
+            Top Collectors of the Week
+          </h1>
+          <div className="pt-6">
+            <CardCollectors />
+          </div>
+          <div>
+            <Ads />
+          </div>
         </div>
       </div>
     </main>

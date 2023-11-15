@@ -43,7 +43,7 @@ const CardMusic3 = () => {
     {
       id: 1,
       title: "Divinity",
-      artiste: "Alissa Martins",
+      artiste: "Ali Martins",
       image: "/artiste10.jpg", // Replace with your image path
     },
     {
@@ -91,7 +91,7 @@ const CardMusic3 = () => {
         {data.map((item) => (
           <div
             key={item.id}
-            className=" h-full  py-6 bg-[#09090c] rounded-md box-shadow-lg cursor-pointer  hover:shadow-yellow-700  transition-all duration-200 ease-in hover:scale-100 hover:-translate-y-10"
+            className=" h-full py-4 px-14  lg:py-4 lg:px-4 bg-[#09090c] rounded-md box-shadow-lg cursor-pointer  hover:shadow-yellow-700  transition-all duration-200 ease-in hover:scale-100 hover:-translate-y-10"
           >
             <div className="relative w-full  ">
               <Image
@@ -99,23 +99,22 @@ const CardMusic3 = () => {
                 alt=""
                 width={200}
                 height={1000}
-                className="relative mx-auto h-52 rounded-full   transition-all ease-in-out duration-200  shadow-slate-600 hover:shadow-yellow-700 shadow-lg"
+                className="relative mx-auto h-52 lg:h-36 lg:w-36 rounded-full   transition-all ease-in-out duration-200  shadow-slate-600 hover:shadow-yellow-700 shadow-lg"
               />
             </div>
-            <div className="px-4 mt-2 flex flex-row justify-between items-center">
+            <div className=" mt-2 flex flex-row justify-between items-center">
               <div>
-                <h1 className="text-white text-2xl font-bold">
+                <h1 className="text-white text-2xl lg:text-lg font-bold">
                   {item.artiste}
                 </h1>
 
-                <h1 className="text-[#393939]">{item.title}</h1>
+                <h1 className="text-[#393939] lg:text-sm">{item.title}</h1>
               </div>
               <div className="flex items-center gap-1">
                 <AiOutlinePlayCircle
                   className=" text-white h-10 w-10  cursor-pointer inset-4 z-50 mx-auto flex opacity-10 hover:opacity-100"
                   onClick={() => openPlayerHandler(item)}
                 />
-                <BsThreeDots className="text-white text-2xl cursor-pointer inset-0 z-50 mx-auto flex opacity-10 hover:opacity-100" />
               </div>
             </div>
           </div>

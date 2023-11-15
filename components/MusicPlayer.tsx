@@ -49,7 +49,7 @@ const MusicPlayer: React.FC<MusicPlayerProps> = ({ isOpen, onClose, song }) => {
 
   return (
     <div
-      className={`px-16 fixed bottom-0 left-0 right-0 bg-gray-800  p-4 transition-transform duration-300 transform ${
+      className={`px-16 z-40 fixed bottom-0 left-0 right-0 bg-gray-800  p-4 transition-transform duration-300 transform ${
         isOpen ? "translate-y-0" : "translate-y-full"
       }`}
     >
