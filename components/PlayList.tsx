@@ -1,5 +1,4 @@
 import React from "react";
-import CardMusic from "./CardMusic";
 import CardMusic3 from "./CardMusic3.jsx";
 
 const PlayList = () => {
