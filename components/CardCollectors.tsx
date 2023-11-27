@@ -1,5 +1,13 @@
+import Image from "next/image";
 import React from "react";
 import { GoVerified } from "react-icons/go";
+import artiste1 from "../public/artiste1.jpg";
+
+import artiste2 from "../public/artiste2.jpeg";
+
+import artiste3 from "../public/artiste3.jpeg";
+
+import artiste4 from "../public/artiste4.jpeg";
 
 const CardCollectors = () => {
   return (
@@ -8,9 +16,11 @@ const CardCollectors = () => {
         <div className="flex items-start gap-4 p-4 sm:p-6 lg:p-2">
           <h1 className="text-2xl font-extrabold text-white">1</h1>
           <a href="#" className="block shrink-0">
-            <img
+            <Image
+              width={100}
+              height={100}
               alt="Speaker"
-              src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+              src={artiste1}
               className="h-16 w-14 rounded-lg object-cover"
             />
           </a>
@@ -53,9 +63,11 @@ const CardCollectors = () => {
         <div className="flex items-start gap-4 p-4 sm:p-6 lg:p-2">
           <h1 className="text-2xl font-extrabold text-white">1</h1>
           <a href="#" className="block shrink-0">
-            <img
+            <Image
+              width={100}
+              height={100}
               alt="Speaker"
-              src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+              src={artiste4}
               className="h-16 w-14 rounded-lg object-cover"
             />
           </a>
@@ -97,9 +109,11 @@ const CardCollectors = () => {
         <div className="flex items-start gap-4 p-4 sm:p-6 lg:p-2">
           <h1 className="text-2xl font-extrabold text-white">1</h1>
           <a href="#" className="block shrink-0">
-            <img
+            <Image
+              width={100}
+              height={100}
               alt="Speaker"
-              src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+              src={artiste2}
               className="h-16 w-14 rounded-lg object-cover"
             />
           </a>
@@ -141,9 +155,11 @@ const CardCollectors = () => {
         <div className="flex items-start gap-4 p-4 sm:p-6 lg:p-2">
           <h1 className="text-2xl font-extrabold text-white">1</h1>
           <a href="#" className="block shrink-0">
-            <img
+            <Image
+              width={100}
+              height={100}
               alt="Speaker"
-              src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YXZhdGFyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
+              src={artiste3}
               className="h-16 w-14 rounded-lg object-cover"
             />
           </a>
