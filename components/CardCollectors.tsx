@@ -11,7 +11,7 @@ import artiste4 from "../public/artiste4.jpeg";
 
 const CardCollectors = () => {
   return (
-    <div className="grid lg:grid-cols-3 grid-cols-2 lg:gap-12 sm:gap-2">
+    <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-12 sm:gap-2">
       <article className="rounded-xl border-2 border-black bg-[#09090c] relative">
         <div className="flex items-start gap-4 p-4 sm:p-6 lg:p-2">
           <h1 className="text-2xl font-extrabold text-white">1</h1>
@@ -61,7 +61,7 @@ const CardCollectors = () => {
 
       <article className="rounded-xl border-2 border-black bg-[#09090c] relative">
         <div className="flex items-start gap-4 p-4 sm:p-6 lg:p-2">
-          <h1 className="text-2xl font-extrabold text-white">1</h1>
+          <h1 className="text-2xl font-extrabold text-white">2</h1>
           <a href="#" className="block shrink-0">
             <Image
               width={100}
@@ -107,7 +107,7 @@ const CardCollectors = () => {
       </article>
       <article className="rounded-xl border-2 border-black bg-[#09090c] relative">
         <div className="flex items-start gap-4 p-4 sm:p-6 lg:p-2">
-          <h1 className="text-2xl font-extrabold text-white">1</h1>
+          <h1 className="text-2xl font-extrabold text-white">3</h1>
           <a href="#" className="block shrink-0">
             <Image
               width={100}
@@ -153,7 +153,7 @@ const CardCollectors = () => {
       </article>
       <article className="rounded-xl border-2 border-black bg-[#09090c] relative">
         <div className="flex items-start gap-4 p-4 sm:p-6 lg:p-2">
-          <h1 className="text-2xl font-extrabold text-white">1</h1>
+          <h1 className="text-2xl font-extrabold text-white">4</h1>
           <a href="#" className="block shrink-0">
             <Image
               width={100}

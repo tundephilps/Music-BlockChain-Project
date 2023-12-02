@@ -1,3 +1,5 @@
+import Banner from "@/components/Banner";
+import Bottomtab from "@/components/Bottomtab";
 import Card from "@/components/Card";
 import Loader from "@/components/Loader";
 import NFTBanner from "@/components/NFTBanner";
@@ -38,7 +40,8 @@ const NFTContainer = () => {
   return (
     <main className="">
       <Sidebar />
-      <div className=" bg-black lg:py-12 py-8 px-4 lg:flex lg:items-end lg:justify-center overflow-hidden ">
+      <Banner />
+      <div className=" bg-black lg:py-14 py-8 px-4 lg:flex lg:items-end lg:justify-center overflow-hidden ">
         <div className="lg:px-28 ">
           <Search />
           <NFTBanner />
@@ -48,6 +51,7 @@ const NFTContainer = () => {
           <Card />
         </div>
       </div>
+      <Bottomtab />
     </main>
   );
 };

@@ -233,7 +233,7 @@ const Sidebar = () => {
       initial="hidden"
       animate="visible"
       variants={sidebarVariants}
-      className="fixed top-8 z-50"
+      className="fixed top-8 z-50 lg:flex hidden"
     >
       <Container>
         <Button clicked={click} onClick={() => handleClick()}>
@@ -291,7 +291,7 @@ const Sidebar = () => {
             <Details clicked={profileClick}>
               <Name>
                 <h4>Lara&nbsp;Croft</h4>
-                <Link href="/#">view&nbsp;profile</Link>
+                <Link href="/ProfilePage">view&nbsp;profile</Link>
               </Name>
 
               <Logout>

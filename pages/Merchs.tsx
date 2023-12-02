@@ -1,4 +1,6 @@
+import Banner from "@/components/Banner";
 import Billboard from "@/components/Billboard";
+import Bottomtab from "@/components/Bottomtab";
 import Card from "@/components/Card";
 import CardMerch from "@/components/CardMerch";
 import Loader from "@/components/Loader";
@@ -39,9 +41,12 @@ const MerchContainer = () => {
     <main className="">
       <Sidebar />
       <div className="lg:py-12 lg:px-20 bg-black   ">
+        <Banner />
         {/* <Billboard /> */}
         <CardMerch />
       </div>
+
+      <Bottomtab />
     </main>
   );
 };

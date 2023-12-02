@@ -1,4 +1,6 @@
 import Ads from "@/components/Ads";
+import Banner from "@/components/Banner";
+import Bottomtab from "@/components/Bottomtab";
 import Card from "@/components/Card";
 import CardCollectors from "@/components/CardCollectors";
 import CardMusic2 from "@/components/CardMusic2";
@@ -52,7 +54,8 @@ const MusicContainer = () => {
   return (
     <main className="">
       <Sidebar />
-      <div className="lg:py-8 lg:px-20 bg-black h-full">
+      <Banner />
+      <div className="lg:py-14 lg:px-20 bg-black h-full">
         <Swipe />
         <div className="pt-12">
           <PlayList />
@@ -69,6 +72,8 @@ const MusicContainer = () => {
           </div>
         </div>
       </div>
+
+      <Bottomtab />
     </main>
   );
 };
