@@ -19,7 +19,7 @@ import Tabs from "@/components/Tabs";
 
 const ProfilePage = () => {
   return (
-    <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8  py-24 bg-black px-8">
+    <div className="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-8  lg:py-24 py-2 bg-black px-2 lg:px-8">
       <div className=" rounded-lg bg-[#09090c] p-8 ">
         <div className="relative flex justify-center">
           <Image
