@@ -11,17 +11,17 @@ const HowItWorks = () => {
   const tabData = [
     {
       title: "Flexibility",
-      content: "Lorem ipsum dolor sit amet consectetur...",
+      content: "Flexibile packages for diffrent artistes",
       imageSrc: bema2,
     },
     {
       title: "Scale",
-      content: "Lorem ipsum dolor sit amet consectetur...",
+      content: "Musicians have ability to scale up there Assets",
       imageSrc: bema4,
     },
     {
       title: "Support",
-      content: "Lorem ipsum dolor sit amet consectetur...",
+      content: "We provide 24hrs support to clients everytime.",
       imageSrc: bema1,
     },
   ];
