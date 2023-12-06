@@ -33,7 +33,7 @@ const ProfilePage = () => {
         </div>
         <div className="flex justify-center pt-2 flex-col items-center">
           <h1 className="text-white font-bold text-2xl">James Brown</h1>
-          <h1 className="text-white  ">jamesbrown@gmail.com</h1>
+          <h1 className="text-white">jamesbrown@gmail.com</h1>
           <div className="flex flex-row gap-2 pt-2">
             <div className="bg-slate-700 p-1 flex items-center justify-center rounded-md">
               <h1 className="text-white text-xs font-semibold">3.4k ffers</h1>

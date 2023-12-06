@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { motion } from "framer-motion";
-
-import dynamic from "next/dynamic";
+import { motion, Variants } from "framer-motion";
 
 const Loader = () => {
   return (
@@ -12,7 +10,7 @@ const Loader = () => {
   );
 };
 
-const variants = {
+const variants: Variants = {
   initial: {
     scaleY: 0.5,
     opacity: 0,

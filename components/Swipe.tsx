@@ -57,10 +57,12 @@ export default function Swipe() {
           }}
           modules={[Navigation]}
           className="mySwiper"
-          style={{
-            "--swiper-navigation-color": "red",
-            "--swiper-navigation-size": "150px",
-          }}
+          style={
+            {
+              //       "--swiper-navigation-color": "red",
+              //        "--swiper-navigation-size": "150px",
+            }
+          }
           //navigation={true}
         >
           <SwiperSlide>

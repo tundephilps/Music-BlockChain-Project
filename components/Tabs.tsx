@@ -1,17 +1,19 @@
-import { useState } from "react";
+import { useState, ReactElement } from "react";
 import Releases from "./Tabs/Releases";
 import Collection from "./Tabs/Collection";
 import PlayLists from "./Tabs/PlayLists";
 import { TopFans } from "./Tabs/TopFans";
 
-const Tab = () => {
-  const [activeTab, setActiveTab] = useState("Releases"); // Default active tab
+type TabName = "Releases" | "Collection" | "Playlists" | "Top Fans";
 
-  const handleTabClick = (tabName) => {
+const Tab = (): ReactElement => {
+  const [activeTab, setActiveTab] = useState<TabName>("Releases"); // Default active tab
+
+  const handleTabClick = (tabName: TabName) => {
     setActiveTab(tabName);
   };
 
-  const renderComponent = (tabName) => {
+  const renderComponent = (tabName: TabName): ReactElement | null => {
     // Conditionally render different components based on the active tab
     switch (tabName) {
       case "Releases":
@@ -33,7 +35,7 @@ const Tab = () => {
         <select
           id="Tab"
           className="w-full rounded-md border-slate-700 h-12 bg-black text-white"
-          onChange={(e) => handleTabClick(e.target.value)}
+          onChange={(e) => handleTabClick(e.target.value as TabName)}
           value={activeTab}
         >
           <option value="Releases">Releases</option>
@@ -53,7 +55,7 @@ const Tab = () => {
               <a
                 key={tab}
                 href="#"
-                onClick={() => handleTabClick(tab)}
+                onClick={() => handleTabClick(tab as TabName)}
                 className={`shrink-0 border-b-2 border-transparent px-1 pb-4 text-xs font-medium ${
                   activeTab === tab
                     ? "text-yellow-600 border-yellow-500"

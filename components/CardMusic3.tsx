@@ -5,14 +5,22 @@ import { AiOutlinePlayCircle } from "react-icons/ai";
 import { BsThreeDots } from "react-icons/bs";
 import MusicPlayer from "./MusicPlayer";
 
+interface Song {
+  title: string;
+  artiste: string;
+  image: string;
+  id: number;
+
+  audio: string; // Add the 'audio' property
+}
+
 const CardMusic3 = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [selectedSong, setSelectedSong] = useState(null);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [selectedSong, setSelectedSong] = useState<Song | null>(null);
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
+  const [progress, setProgress] = useState<number>(0);
 
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [progress, setProgress] = useState(0);
-
-  const openPlayerHandler = (song) => {
+  const openPlayerHandler = (song: Song) => {
     setSelectedSong(song);
     setIsOpen(true);
   };
@@ -23,64 +31,63 @@ const CardMusic3 = () => {
   };
 
   const playPauseHandler = () => {
-    // Toggle play/pause logic
     setIsPlaying(!isPlaying);
   };
 
-  const skipHandler = (forward) => {
-    // Logic to skip to the next or previous song
-    // You need to implement the actual logic based on your data
-  };
-
-  const progressChangeHandler = (e) => {
-    // Logic to update the progress when the slider changes
-    const value = e.target.value;
+  const progressChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = Number(e.target.value);
     setProgress(value);
-    // You may want to update the playback position based on the slider value
   };
 
-  const data = [
+  const data: Song[] = [
     {
       id: 1,
       title: "Divinity",
       artiste: "Ali Martins",
       image: "/artiste10.jpg", // Replace with your image path
+      audio: "path_to_audio_file_1.mp3", // Add audio file path for each song
     },
     {
       id: 2,
       title: "closure",
       artiste: "Madi",
       image: "/artiste2.jpeg", // Replace with your image path
+      audio: "path_to_audio_file_1.mp3", // Add audio file path for each song
     },
     {
       id: 3,
       title: "Time knocks",
       artiste: "Martin Joy",
       image: "/artiste3.jpeg", // Replace with your image path
+      audio: "path_to_audio_file_1.mp3", // Add audio file path for each song
     },
     {
       id: 4,
       title: "Sweet Dreams",
       artiste: "Lax",
       image: "/artiste4.jpeg", // Replace with your image path
+      audio: "path_to_audio_file_1.mp3", // Add audio file path for each song
     },
     {
       id: 5,
       title: "Up down",
       artiste: "Ezi Lilla",
       image: "/artiste5.jpeg", // Replace with your image path
+      audio: "path_to_audio_file_1.mp3", // Add audio file path for each song
     },
     {
       id: 6,
       title: "Up down",
       artiste: "Ezi Lilla",
-      image: "/artiste6.jpeg", // Replace with your image path
+      image: "/artiste6.jpeg", // Replace with your image
+      audio: "path_to_audio_file_1.mp3", // Add audio file path for each song
     },
     {
       id: 7,
       title: "Up down",
       artiste: "Ezi Lilla",
       image: "/artiste7.jpeg", // Replace with your image path
+      audio: "path_to_audio_file_1.mp3", // Add audio file path for each song
     },
     // Add more items as needed
   ];
