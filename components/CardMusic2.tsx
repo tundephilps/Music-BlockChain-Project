@@ -2,8 +2,11 @@ import Image from "next/image";
 import React from "react";
 import artiste1 from "../public/artiste1.jpg";
 import { FaClock, FaEthereum, FaHeart, FaPlay } from "react-icons/fa";
-const CardMusic2 = () => {
-  const renderContent = () => {
+
+type ContentType = "music" | "video" | "locked" | "collection" | "category";
+
+const CardMusic2: React.FC = () => {
+  const renderContent = (type: ContentType) => {
     switch (type) {
       case "music":
         return <div className="wave"></div>;
