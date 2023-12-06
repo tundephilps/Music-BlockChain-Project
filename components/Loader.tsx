@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
-import { motion, Variants } from "framer-motion";
+//import { Variants } from "framer-motion";
+
+const { motion, Variants } = require("framer-motion");
 
 const Loader = () => {
   return (
@@ -10,7 +12,7 @@ const Loader = () => {
   );
 };
 
-const variants: Variants = {
+const variants = {
   initial: {
     scaleY: 0.5,
     opacity: 0,

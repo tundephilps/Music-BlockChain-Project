@@ -1,5 +1,6 @@
-import { motion } from "framer-motion";
+//import { motion } from "framer-motion";
 
+const { motion } = require("framer-motion");
 import drum from "../public/drum.jpg";
 import Image from "next/image";
 
